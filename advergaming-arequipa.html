@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activaciones de Marca en Arequipa | Juegos para Eventos y PERUMIN - Vasqui</title>
+    <meta name="description"
+        content="Domina las ferias en Arequipa con videojuegos personalizados. Ruleta digital, Trivia, Memoria y Advergaming para stands en PERUMIN y eventos corporativos.">
+    <meta name="keywords"
+        content="Activaciones de marca en Arequipa, Alquiler de juegos para eventos Arequipa, Advergaming Perú, Juegos interactivos para ferias, Ruleta digital personalizada, Juegos para stands en PERUMIN">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        :root {
+            --primary: #ef4444;
+            --secondary: #22c55e;
+            --dark: #0F172A;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--dark);
+            color: white;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(34, 197, 94, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Totem Style Video Frame */
+        .totem-frame {
+            position: relative;
+            width: 280px;
+            aspect-ratio: 9 / 16;
+            background: #000;
+            border: 8px solid #1e293b;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .player-container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 317%;
+            height: 100%;
+            transform: translateX(-50%);
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Swiper Mobile Optimizations */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none !important;
+            }
+
+            .mySwiper {
+                aspect-ratio: 16 / 9;
+                max-height: 300px;
+                /* Limit height on mobile */
+            }
+
+            .swiper-slide img {
+                filter: none !important;
+            }
+
+            .mobile-hide-glow {
+                display: none !important;
+            }
+
+            .section-py {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .mySwiper {
+                aspect-ratio: 16 / 9;
+            }
+
+            .section-py {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        .cta-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 -z-10">
+        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_-20%,#1e293b,transparent)]">
+        </div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-green-500/5 rounded-full blur-[100px]"></div>
+        <div class="absolute top-1/2 left-0 w-72 h-72 bg-red-500/5 rounded-full blur-[100px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black tracking-tighter text-white">VASQUI<span class="text-green-500">.</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#galeria" class="hover:text-white transition">Juegos</a>
+                <a href="#diferencial" class="hover:text-white transition">Por qué nosotros</a>
+                <a href="#blog" class="hover:text-white transition">La Ciencia del Juego</a>
+            </div>
+            <a href="https://wa.me/YOURNUMBER"
+                class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full text-sm font-bold transition shadow-lg shadow-green-500/20">
+                WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center max-w-4xl">
+            <span
+                class="inline-block px-4 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-500 text-xs font-bold uppercase tracking-widest mb-6">
+                Líderes en Advergaming Arequipa
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                Transforma tu Stand en el <br>
+                <span class="text-green-500">Punto más Visitado</span> de la Feria
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Creamos videojuegos personalizados (Windows y Android) para activaciones de marca y eventos corporativos
+                en Arequipa. <span class="text-white font-semibold">Convierte el juego en ventas.</span>
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contacto"
+                    class="cta-btn bg-green-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl">
+                    Cotiza tu Juego Ahora
+                </a>
+                <a href="totem_demo.html"
+                    class="cta-btn bg-white/5 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold text-lg border border-white/10 backdrop-blur-sm">
+                    Ver Demo en Vivo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery of "Activators of Success" -->
+    <section id="galeria" class="py-24 bg-white/2">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold mb-4">Nuestra Galería de <span class="text-green-500">"Activadores de
+                        Éxito"</span></h2>
+                <p class="text-slate-400">No es solo software, son potentes herramientas de captación de leads.</p>
+            </div>
+
+            <div class="space-y-32">
+                <!-- Ruleta Digital -->
+                <div class="flex flex-col md:flex-row items-center gap-16">
+                    <div class="flex-1 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-green-500 font-bold text-sm uppercase">
+                            <span class="w-8 h-1 bg-green-500 rounded-full"></span>
+                            Engagement Inmediato
+                        </div>
+                        <h3 class="text-4xl font-bold">Ruleta Digital Personalizada</h3>
+                        <p class="text-lg text-slate-400">
+                            "La emoción del azar para entrega de premios inmediata." Ideal para romper el hielo y
+                            generar una fila constante de interesados en tu stand.
+                        </p>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex items-center gap-3">
+                                <div class="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-green-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                Probabilidades configurables
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-green-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                Sonidos premium y animaciones de impacto
+                            </li>
+                        </ul>
+                        <a href="#contacto"
+                            class="inline-block border-b-2 border-green-500 text-green-500 font-bold pb-1 hover:text-green-400 transition">Saber
+                            más sobre Ruleta Digital</a>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <div class="totem-frame">
+                            <div class="player-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/hV7bWxAgd7k?autoplay=1&mute=1&loop=1&playlist=hV7bWxAgd7k&controls=0&modestbranding=1"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trivia Interactiva -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-16">
+                    <div class="flex-1 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-red-500 font-bold text-sm uppercase">
+                            <span class="w-8 h-1 bg-red-500 rounded-full"></span>
+                            Educación de Marca
+                        </div>
+                        <h3 class="text-4xl font-bold">Trivia Interactiva</h3>
+                        <p class="text-lg text-slate-400">
+                            "Ideal para educar sobre tu marca mientras compiten." Convierte datos técnicos aburridos en
+                            un reto emocionante.
+                        </p>
+                        <ul class="space-y-3 text-slate-300">
+                            <li class="flex items-center gap-3">
+                                <div class="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-red-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                Ranking de líderes en tiempo real
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center">
+                                    <svg class="w-3 h-3 text-red-500" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                Captura de datos al finalizar
+                            </li>
+                        </ul>
+                        <a href="#contacto"
+                            class="inline-block border-b-2 border-red-500 text-red-500 font-bold pb-1 hover:text-red-400 transition">Solicitar
+                            Trivia para mi evento</a>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <div class="totem-frame border-red-900/30">
+                            <div class="player-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/hV7bWxAgd7k?autoplay=1&mute=1&loop=1&playlist=hV7bWxAgd7k&controls=0&modestbranding=1"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memoria (Memory Match) -->
+                <div class="flex flex-col md:flex-row items-center gap-16">
+                    <div class="flex-1 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-blue-500 font-bold text-sm uppercase">
+                            <span class="w-8 h-1 bg-blue-500 rounded-full"></span>
+                            Reconocimiento Visual
+                        </div>
+                        <h3 class="text-4xl font-bold">Juego de Memoria</h3>
+                        <p class="text-lg text-slate-400">
+                            "Refuerza el reconocimiento de tu logo y productos." Una forma infalible de fijar tu
+                            identidad visual en la mente del consumidor.
+                        </p>
+                        <a href="#contacto"
+                            class="inline-block border-b-2 border-blue-500 text-blue-500 font-bold pb-1 hover:text-blue-400 transition">Ver
+                            ejemplos de personalización</a>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <div class="totem-frame border-blue-900/30">
+                            <div class="player-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/hV7bWxAgd7k?autoplay=1&mute=1&loop=1&playlist=hV7bWxAgd7k&controls=0&modestbranding=1"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Base Defense -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-16">
+                    <div class="flex-1 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-purple-500 font-bold text-sm uppercase">
+                            <span class="w-8 h-1 bg-purple-500 rounded-full"></span>
+                            Alta Intensidad
+                        </div>
+                        <h3 class="text-4xl font-bold">Base Defense (Action)</h3>
+                        <p class="text-lg text-slate-400">
+                            "Gamificación de alta intensidad para retener al público en tu stand." Perfecto para marcas
+                            juveniles o tecnológicas en PERUMIN.
+                        </p>
+                        <a href="#contacto"
+                            class="inline-block border-b-2 border-purple-500 text-purple-500 font-bold pb-1 hover:text-purple-400 transition">Consultar
+                            disponibilidad</a>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <div class="totem-frame border-purple-900/30">
+                            <div class="player-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/hV7bWxAgd7k?autoplay=1&mute=1&loop=1&playlist=hV7bWxAgd7k&controls=0&modestbranding=1"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Raspa y Gana Digital -->
+                <div class="flex flex-col md:flex-row items-center gap-16">
+                    <div class="flex-1 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-yellow-500 font-bold text-sm uppercase">
+                            <span class="w-8 h-1 bg-yellow-500 rounded-full"></span>
+                            Curiosidad & Leads
+                        </div>
+                        <h3 class="text-4xl font-bold">Raspa y Gana Digital</h3>
+                        <p class="text-lg text-slate-400">
+                            "La curiosidad que genera leads en segundos." La mecánica clásica de raspar, ahora en una
+                            pantalla táctil de alta resolución que captura datos al instante.
+                        </p>
+                        <a href="#contacto"
+                            class="inline-block border-b-2 border-yellow-500 text-yellow-500 font-bold pb-1 hover:text-yellow-400 transition">Cotizar
+                            Raspa y Gana</a>
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <div class="totem-frame border-yellow-900/30">
+                            <div class="player-container">
+                                <iframe
+                                    src="https://www.youtube.com/embed/hV7bWxAgd7k?autoplay=1&mute=1&loop=1&playlist=hV7bWxAgd7k&controls=0&modestbranding=1"
+                                    allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factor Diferencial -->
+    <section id="diferencial" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">El Factor <span class="text-green-500">Diferencial</span>
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 21h6l-.75-4M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Multiplataforma</h4>
+                    <p class="text-slate-400">Funcionamiento fluido en Totems (Windows) y Tablets (Android). Tu
+                        activación donde la necesites.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Personalización Total</h4>
+                    <p class="text-slate-400">No solo logos; adaptamos mecánicas y colores a la identidad de tu empresa
+                        para una inmersión completa.</p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Analítica Integrada</h4>
+                    <p class="text-slate-400">Recolección de datos (nombres, correos) integrada legalmente para
+                        alimentar tu CRM post-evento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / Science of Play -->
+    <section id="blog" class="section-py border-y border-white/5 overflow-hidden">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+                <!-- Texto: Ahora es order-2 en móvil para que el carrusel brille primero -->
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 leading-tight">
+                        ¿Cómo destacar en los eventos más grandes de Arequipa?
+                        <br class="hidden md:block">
+                        <span class="text-green-500">La ciencia del juego.</span>
+                    </h2>
+                    <p class="text-base md:text-lg text-slate-300 italic mb-8 border-l-4 border-green-500 pl-6">
+                        "En un mundo lleno de folletos que terminan en la basura, el juego es el único medio que
+                        garantiza que tu cliente te dedique, al menos, 60 segundos de atención plena."
+                    </p>
+                    <p class="text-sm md:text-base text-slate-400 leading-relaxed mb-6">
+                        Las empresas líderes en Arequipa ya no solo "están" en la feria; ellas
+                        <span class="text-white font-bold">dominan la feria</span>. Nuestros videojuegos para Totem
+                        están diseñados bajo principios de UX Psicológica.
+                    </p>
+                </div>
+
+                <!-- Carrusel: Order-1 en móvil para captar atención inmediata -->
+                <div class="relative group order-1 md:order-2 w-full">
+                    <div
+                        class="absolute -inset-4 bg-green-500/20 blur-2xl rounded-full opacity-50 group-hover:opacity-100 transition duration-500 hidden md:block">
+                    </div>
+
+                    <div class="swiper mySwiper relative rounded-3xl overflow-hidden shadow-2xl">
+                        <div class="swiper-wrapper">
+                            <!-- Slide Ejemplo -->
+                            <div class="swiper-slide">
+                                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800"
+                                    alt="Gamificación 1"
+                                    class="w-full aspect-video object-cover md:grayscale md:hover:grayscale-0 transition duration-500">
+                            </div>
+                            <!-- ... resto de slides ... -->
+                        </div>
+
+                        <div class="swiper-pagination !bottom-4"></div>
+
+                        <!-- Flechas: ocultas en móvil para limpiar la UI (el usuario suele usar el dedo) -->
+                        <div
+                            class="swiper-button-next hidden md:flex !text-white !w-8 !h-8 after:!text-sm bg-black/20 backdrop-blur-md rounded-full">
+                        </div>
+                        <div
+                            class="swiper-button-prev hidden md:flex !text-white !w-8 !h-8 after:!text-sm bg-black/20 backdrop-blur-md rounded-full">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Comparison Table -->
+    <section class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Por qué somos la mejor opción en Arequipa</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse glass-card rounded-2xl">
+                    <thead>
+                        <tr class="border-b border-white/10">
+                            <th class="p-6 font-bold text-slate-400 uppercase text-xs">Característica</th>
+                            <th class="p-6 font-bold text-slate-400 uppercase text-xs">Agencias Genéricas</th>
+                            <th class="p-6 font-bold text-green-500 uppercase text-xs bg-green-500/5">VASQUI (Arequipa
+                                Specialist)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-white/5">
+                            <td class="p-6 font-semibold">Enfoque SEO</td>
+                            <td class="p-6 text-slate-500">Genérico / Nacional</td>
+                            <td class="p-6 font-bold text-white bg-green-500/5">Localizado (Arequipa/Cerro Juli/PERUMIN)
+                            </td>
+                        </tr>
+                        <tr class="border-b border-white/5">
+                            <td class="p-6 font-semibold">UX/UI Design</td>
+                            <td class="p-6 text-slate-500">Estática y convencional</td>
+                            <td class="p-6 font-bold text-white bg-green-500/5">Inmersiva, con micro-interacciones</td>
+                        </tr>
+                        <tr class="border-b border-white/5">
+                            <td class="p-6 font-semibold">Catálogo</td>
+                            <td class="p-6 text-slate-500">Listado simple</td>
+                            <td class="p-6 font-bold text-white bg-green-500/5">Casos de éxito y beneficios por juego
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-semibold">Conversión</td>
+                            <td class="p-6 text-slate-500">Formulario estándar</td>
+                            <td class="p-6 font-bold text-white bg-green-500/5">WhatsApp Directo & Brochure PDF</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA & Contact -->
+    <section id="contacto" class="py-24 bg-green-500 relative overflow-hidden">
+        <div
+            class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-black text-dark mb-6 uppercase italic">¿Listo para dominar PERUMIN?
+            </h2>
+            <p class="text-xl text-dark/80 mb-12 font-medium">Hablemos hoy mismo y diseñemos la activación que todos
+                recordarán.</p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="https://wa.me/YOURNUMBER"
+                    class="bg-dark text-white px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition shadow-2xl">
+                    SÍ, QUIERO MI PROPUESTA
+                </a>
+                <a href="#" class="text-dark font-bold text-lg hover:underline underline-offset-8">Descargar Brochure
+                    PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-dark text-slate-500 border-t border-white/5">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-xl font-black text-white">VASQUI<span class="text-green-500">.</span></div>
+            <p class="text-sm">© 2026 Vasqui Marketing Arequipa. Todos los derechos reservados. Expertos en Advergaming.
+            </p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+                <a href="#" class="hover:text-white transition">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Floating Button -->
+    <a href="https://wa.me/YOURNUMBER"
+        class="fixed bottom-8 right-8 z-[100] bg-green-500 p-4 rounded-full shadow-2xl hover:scale-110 transition group">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.407 3.481 2.242 2.242 3.481 5.226 3.481 8.408 0 6.556-5.332 11.89-11.891 11.89-1.923 0-3.836-.467-5.545-1.354l-6.442 1.575zm6.429-4.037l.388.231c1.551.921 3.345 1.408 5.174 1.408 5.432 0 9.854-4.422 9.854-9.854 0-2.636-1.026-5.112-2.888-6.973-1.862-1.863-4.337-2.889-6.966-2.889-5.431 0-9.853 4.421-9.853 9.853 0 2.046.633 4.041 1.832 5.736l.253.356-.998 3.64 3.728-.911zm11.13-7.534c-.307-.154-1.815-.895-2.097-.997-.281-.102-.485-.154-.689.154-.204.307-.791.997-.97 1.191-.179.194-.357.215-.664.061-.307-.154-1.3-.479-2.472-1.527-.912-.814-1.528-1.819-1.706-2.126-.178-.307-.019-.474.135-.626.139-.138.307-.357.46-.536.153-.179.204-.307.307-.512.102-.204.051-.383-.026-.537-.077-.154-.689-1.662-.945-2.277-.249-.599-.503-.518-.689-.528-.178-.009-.383-.011-.587-.011-.204 0-.537.077-.817.384-.281.307-1.073 1.05-1.073 2.56 0 1.51 1.1 2.97 1.253 3.174.153.204 2.164 3.305 5.241 4.636.732.316 1.303.504 1.748.646.735.234 1.404.2 1.933.121.589-.088 1.815-.742 2.071-1.458.256-.717.256-1.33.179-1.458-.077-.128-.282-.204-.589-.358z" />
+        </svg>
+        <span
+            class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-dark text-xs font-bold px-3 py-1 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition whitespace-nowrap">¡Hablemos
+            de tu evento!</span>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
