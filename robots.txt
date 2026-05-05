@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /Creación de Juegos y Apps.html
+Disallow: /totem_demo.html
+
+Sitemap: https://vasqui.pe/sitemap.xml
