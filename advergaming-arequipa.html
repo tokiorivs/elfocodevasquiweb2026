@@ -4,14 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activaciones de Marca en Arequipa | Juegos para Eventos y PERUMIN - Vasqui</title>
+    <title>Activaciones de Marca en Arequipa | Juegos para Eventos y PERUMIN - El Foco de Vasqui</title>
     <meta name="description"
         content="Domina las ferias en Arequipa con videojuegos personalizados. Ruleta digital, Trivia, Memoria y Advergaming para stands en PERUMIN y eventos corporativos.">
     <meta name="keywords"
         content="Activaciones de marca en Arequipa, Alquiler de juegos para eventos Arequipa, Advergaming Perú, Juegos interactivos para ferias, Ruleta digital personalizada, Juegos para stands en PERUMIN">
 
+    <!-- SEO & Indexing -->
+    <link rel="canonical" href="https://vasqui.pe/advergaming-arequipa.html" />
+    <link rel="icon" type="image/png" href="iconfav.png">
+    <meta property="og:title" content="Advergaming en Arequipa | El Foco de Vasqui" />
+    <meta property="og:description"
+        content="Videojuegos personalizados para stands en PERUMIN y eventos corporativos en Arequipa." />
+    <meta property="og:image"
+        content="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/blur-shopping-mall.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Structured Data (Local Business) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "El Foco de Vasqui",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Arequipa",
+        "addressRegion": "AQP",
+        "addressCountry": "PE"
+      },
+      "url": "https://vasqui.pe",
+      "logo": "https://vasqui.pe/logos_foco_de_vasqui/logo en blanco 1.png",
+      "description": "Especialistas en activaciones BTL y marketing experiencial."
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -158,7 +188,7 @@
         }
 
         .totem-env-bg {
-            background-image: url('blur-shopping-mall.jpg');
+            background-image: url('https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/blur-shopping-mall.jpg');
             background-size: cover;
             background-position: center;
             padding: 60px 40px;
@@ -178,8 +208,9 @@
         /* Swiper Mobile Optimizations */
         .swiper-slide img {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
+            display: block;
         }
 
         @media (max-width: 768px) {
@@ -190,22 +221,38 @@
             }
 
             .mySwiper {
-                aspect-ratio: 16 / 9;
-                max-height: 300px;
-                /* Limit height on mobile */
+                aspect-ratio: auto;
+                max-height: none;
+                min-height: 220px;
+                height: auto;
+            }
+
+            .swiper-slide {
+                min-height: 220px;
             }
 
             .swiper-slide img {
                 filter: none !important;
-            }
-
-            .mobile-hide-glow {
-                display: none !important;
+                height: auto;
+                object-fit: cover;
             }
 
             .section-py {
                 padding-top: 3rem;
                 padding-bottom: 3rem;
+            }
+
+            #blog .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            #blog h2 {
+                font-size: 2rem;
+            }
+
+            #blog p {
+                font-size: 0.95rem;
             }
         }
 
@@ -244,17 +291,18 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-lg border-b border-white/5">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <nav
+        class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] z-50 bg-dark/80 backdrop-blur-lg border-b border-white/5">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
-                <img src="elfocodevasqui_logo.png" alt="Vasqui Logo" class="h-10 w-auto">
+                <img src="logos_foco_de_vasqui/logo en blanco 1.png" alt="El Foco de Vasqui Logo" class="h-16 w-auto">
             </a>
             <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
                 <a href="#galeria" class="hover:text-white transition">Juegos</a>
                 <a href="#diferencial" class="hover:text-white transition">Por qué nosotros</a>
                 <a href="#blog" class="hover:text-white transition">La Ciencia del Juego</a>
             </div>
-            <a href="https://wa.me/YOURNUMBER"
+            <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
                 class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full text-sm font-bold transition shadow-lg shadow-green-500/20">
                 WhatsApp
             </a>
@@ -328,7 +376,7 @@
                                         Mínimo tiempo de interacción, excelente para atender multitudes.
                                     </li>
                                 </ul>
-                                <a href="https://wa.me/YOURNUMBER"
+                                <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
                                     class="inline-block bg-yellow-500 text-dark px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-2xl shadow-yellow-500/20 uppercase">SOLICITAR
                                     RASPA</a>
                             </div>
@@ -378,7 +426,7 @@
                                         Ranking de tiempo competitivo.
                                     </li>
                                 </ul>
-                                <a href="https://wa.me/YOURNUMBER"
+                                <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
                                     class="inline-block bg-red-500 text-white px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-2xl shadow-red-500/20 uppercase">COTIZAR
                                     MEMORIA</a>
                             </div>
@@ -428,7 +476,7 @@
                                         Ideal para largas colas, entrega de premios muy rapida.
                                     </li>
                                 </ul>
-                                <a href="https://wa.me/YOURNUMBER"
+                                <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
                                     class="inline-block bg-green-500 text-white px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-2xl shadow-green-500/20 uppercase">COTIZAR
                                     RULETA</a>
                             </div>
@@ -479,7 +527,7 @@
                                         Generación de leads calificados.
                                     </li>
                                 </ul>
-                                <a href="https://wa.me/YOURNUMBER"
+                                <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
                                     class="inline-block bg-blue-500 text-white px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-2xl shadow-blue-500/20 uppercase">SOLICITAR
                                     TRIVIA</a>
                             </div>
@@ -506,11 +554,13 @@
                                 <div class="space-y-6">
                                     <div class="flex items-center gap-4">
                                         <div class="w-12 h-1 bg-purple-500 rounded-full"></div>
-                                        <span class="text-purple-500 font-bold tracking-widest uppercase text-sm">Acción Estratégica</span>
+                                        <span class="text-purple-500 font-bold tracking-widest uppercase text-sm">Acción
+                                            Estratégica</span>
                                     </div>
                                     <h3 class="text-6xl font-black italic text-white leading-tight">Base Defense</h3>
                                     <p class="text-xl text-slate-400 leading-relaxed max-w-lg">
-                                        "Protege tu marca con reflejos de acero." Un reto de 40 segundos donde debes destruir los elementos enemigos antes de que impacten en tu base.
+                                        "Protege tu marca con reflejos de acero." Un reto de 40 segundos donde debes
+                                        destruir los elementos enemigos antes de que impacten en tu base.
                                     </p>
                                 </div>
                                 <ul class="space-y-4">
@@ -527,8 +577,9 @@
                                         Mecánica de supervivencia ideal para premios por puntos.
                                     </li>
                                 </ul>
-                                <a href="https://wa.me/YOURNUMBER"
-                                    class="inline-block bg-purple-500 text-white px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-2xl shadow-purple-500/20 uppercase">SOLICITAR DEFENSE</a>
+                                <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
+                                    class="inline-block bg-purple-500 text-white px-10 py-4 rounded-xl font-black text-lg hover:scale-105 transition shadow-2xl shadow-purple-500/20 uppercase">SOLICITAR
+                                    DEFENSE</a>
                             </div>
                             <div class="flex justify-center totem-env-bg">
                                 <div class="totem-frame">
@@ -581,64 +632,92 @@
             <div class="max-w-4xl mx-auto text-center mb-20">
                 <h2 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
                     Dominando las <span class="text-green-500">Activaciones de Marca en Arequipa</span>:
-                    <br>¿Por qué elegir a VASQUI?
+                    <br>¿Por qué elegir a El Foco de Vasqui?
                 </h2>
                 <p class="text-xl text-slate-400">
-                    No solo instalamos pantallas; diseñamos la arquitectura de software necesaria para que tu marca sea la protagonista en <strong>PERUMIN</strong> y los eventos más importantes de <strong>Cerro Juli</strong>.
+                    No solo instalamos pantallas; diseñamos la arquitectura de software necesaria para que tu marca sea
+                    la protagonista en <strong>PERUMIN</strong> y los eventos más importantes de <strong>Cerro
+                        Juli</strong>.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
                 <!-- Beneficio 1 -->
-                <div class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-green-500/30 transition-all duration-500 group">
-                    <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-green-500/20 transition-colors">
+                <div
+                    class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-green-500/30 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-green-500/20 transition-colors">
                         <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">SEO Localizado y Presencia en <span class="text-white">Cerro Juli</span></h3>
+                    <h3 class="text-2xl font-bold mb-4">SEO Localizado y Presencia en <span class="text-white">Cerro
+                            Juli</span></h3>
                     <p class="text-slate-400 leading-relaxed">
-                        Estar presente en eventos clave de Arequipa con contenido curado es superior al alcance nacional genérico. Optimizamos tu <strong>publicidad interactiva</strong> para el público local, garantizando que tu mensaje resuene específicamente en la capital minera del Perú.
+                        Estar presente en eventos clave de Arequipa con contenido curado es superior al alcance nacional
+                        genérico. Optimizamos tu <strong>publicidad interactiva</strong> para el público local,
+                        garantizando que tu mensaje resuene específicamente en la capital minera del Perú.
                     </p>
                 </div>
 
                 <!-- Beneficio 2 -->
-                <div class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-blue-500/30 transition-all duration-500 group">
-                    <div class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-500/20 transition-colors">
+                <div
+                    class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-blue-500/30 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-500/20 transition-colors">
                         <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
+                            </path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4"><span class="text-white">UX/UI Inmersiva</span>: Adios al rebote</h3>
+                    <h3 class="text-2xl font-bold mb-4"><span class="text-white">UX/UI Inmersiva</span>: Adios al rebote
+                    </h3>
                     <p class="text-slate-400 leading-relaxed">
-                        Eliminamos el desinterés del usuario frente a pantallas estáticas. Nuestras <strong>micro-interacciones</strong> y mecánicas de <strong>Advergaming</strong> capturan la atención plena, transformando un simple vistazo en un compromiso de marca real y duradero.
+                        Eliminamos el desinterés del usuario frente a pantallas estáticas. Nuestras
+                        <strong>micro-interacciones</strong> y mecánicas de <strong>Advergaming</strong> capturan la
+                        atención plena, transformando un simple vistazo en un compromiso de marca real y duradero.
                     </p>
                 </div>
 
                 <!-- Beneficio 3 -->
-                <div class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-yellow-500/30 transition-all duration-500 group">
-                    <div class="w-16 h-16 bg-yellow-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-yellow-500/20 transition-colors">
+                <div
+                    class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-yellow-500/30 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-yellow-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-yellow-500/20 transition-colors">
                         <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Catálogo con <span class="text-white">Casos de Éxito</span></h3>
                     <p class="text-slate-400 leading-relaxed">
-                        No vendemos hardware, vendemos resultados probados con métricas. Nuestro enfoque en <strong>advergaming para eventos</strong> se basa en experiencias exitosas previas, asegurando que cada línea de código esté orientada a cumplir tus objetivos comerciales.
+                        No vendemos hardware, vendemos resultados probados con métricas. Nuestro enfoque en
+                        <strong>advergaming para eventos</strong> se basa en experiencias exitosas previas, asegurando
+                        que cada línea de código esté orientada a cumplir tus objetivos comerciales.
                     </p>
                 </div>
 
                 <!-- Beneficio 4 -->
-                <div class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-red-500/30 transition-all duration-500 group">
-                    <div class="w-16 h-16 bg-red-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-red-500/20 transition-colors">
+                <div
+                    class="glass-card p-10 rounded-[40px] border border-white/10 hover:border-red-500/30 transition-all duration-500 group">
+                    <div
+                        class="w-16 h-16 bg-red-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-red-500/20 transition-colors">
                         <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Conversión Directa: <span class="text-white">Leads sin fricción</span></h3>
+                    <h3 class="text-2xl font-bold mb-4">Conversión Directa: <span class="text-white">Leads sin
+                            fricción</span></h3>
                     <p class="text-slate-400 leading-relaxed">
-                        Destacamos el uso de <strong>WhatsApp y catálogos PDF</strong> como el 'puente de oro' para capturar prospectos calificados. Facilitamos la transición del juego a la venta, eliminando cualquier barrera tecnológica entre tu cliente y tu equipo comercial.
+                        Destacamos el uso de <strong>WhatsApp y catálogos PDF</strong> como el 'puente de oro' para
+                        capturar prospectos calificados. Facilitamos la transición del juego a la venta, eliminando
+                        cualquier barrera tecnológica entre tu cliente y tu equipo comercial.
                     </p>
                 </div>
             </div>
@@ -646,65 +725,86 @@
     </section>
 
     <!-- Blog / Science of Play -->
-    <section id="blog" class="section-py border-y border-white/5 overflow-hidden">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <!-- Sección Blog: Optimizada para Mobile-First -->
+    <section id="blog"
+        class="py-12 md:py-24 border-y border-white/5 bg-[#0f172a] overflow-hidden font-['Outfit',sans-serif]">
+        <div class="container mx-auto px-4 md:px-6 max-w-5xl">
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
-                <!-- Texto: Ahora es order-2 en móvil para que el carrusel brille primero -->
-                <div class="order-2 md:order-1">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8 leading-tight">
-                        ¿Cómo destacar en los eventos más grandes de Arequipa?
-                        <br class="hidden md:block">
-                        <span class="text-green-500">La ciencia del juego.</span>
-                    </h2>
-                    <p class="text-base md:text-lg text-slate-300 italic mb-8 border-l-4 border-green-500 pl-6">
-                        "En un mundo lleno de folletos que terminan en la basura, el juego es el único medio que
-                        garantiza que tu cliente te dedique, al menos, 60 segundos de atención plena."
-                    </p>
-                    <p class="text-sm md:text-base text-slate-400 leading-relaxed mb-6">
-                        Las empresas líderes en Arequipa ya no solo "están" en la feria; ellas
-                        <span class="text-white font-bold">dominan la feria</span>. Nuestros videojuegos para Totem
-                        están diseñados bajo principios de UX Psicológica.
-                    </p>
+                <!-- Contenedor del Carrusel (Order 1 en móvil) -->
+                <div class="w-full order-1 md:order-2">
+                    <div class="relative group">
+                        <!-- Brillo de fondo (Sutil en móvil, intenso en desktop) -->
+                        <div
+                            class="absolute -inset-1 md:-inset-4 bg-green-500/10 md:bg-green-500/20 blur-xl md:blur-2xl rounded-full opacity-70 group-hover:opacity-100 transition duration-500">
+                        </div>
+
+                        <!-- Swiper Container -->
+                        <div
+                            class="swiper mySwiper relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                            <div class="swiper-wrapper">
+                                <!-- Slide 1 -->
+                                <div class="swiper-slide">
+                                    <img src="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/foto%20.png"
+                                        alt="Activación Arequipa"
+                                        class="w-full aspect-[4/5] md:aspect-video object-cover">
+                                </div>
+                                <!-- Slide 2 -->
+                                <div class="swiper-slide">
+                                    <img src="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/foto%202.png"
+                                        alt="Experiencia Usuario"
+                                        class="w-full aspect-[4/5] md:aspect-video object-cover">
+                                </div>
+                            </div>
+
+                            <!-- Paginación móvil -->
+                            <div class="swiper-pagination !bottom-4"></div>
+
+                            <!-- Navegación (Solo Desktop) -->
+                            <div
+                                class="swiper-button-next hidden md:flex !text-white !w-10 !h-10 after:!text-sm bg-black/40 backdrop-blur-md rounded-full border border-white/10">
+                            </div>
+                            <div
+                                class="swiper-button-prev hidden md:flex !text-white !w-10 !h-10 after:!text-sm bg-black/40 backdrop-blur-md rounded-full border border-white/10">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Carrusel: Order-1 en móvil para captar atención inmediata -->
-                <div class="relative group order-1 md:order-2 w-full">
-                    <div
-                        class="absolute -inset-4 bg-green-500/20 blur-2xl rounded-full opacity-50 group-hover:opacity-100 transition duration-500 hidden md:block">
-                    </div>
+                <!-- Contenedor de Texto (Order 2 en móvil) -->
+                <div class="order-2 md:order-1 space-y-6 md:space-y-8">
+                    <header>
+                        <h2 class="text-3xl md:text-5xl font-bold leading-tight tracking-tight text-white">
+                            ¿Cómo destacar en los eventos más grandes de <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Arequipa?</span>
+                            <span class="block text-green-500 mt-2">La ciencia del juego.</span>
+                        </h2>
+                    </header>
 
-                    <div class="swiper mySwiper relative rounded-3xl overflow-hidden shadow-2xl">
-                        <div class="swiper-wrapper">
-                            <!-- Slide 1 -->
-                            <div class="swiper-slide">
-                                <img src="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/foto%20.png"
-                                    alt="Activación Vasqui 1"
-                                    class="w-full aspect-video object-cover transition duration-500">
-                            </div>
-                            <!-- Slide 2 -->
-                            <div class="swiper-slide">
-                                <img src="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/foto%202.png"
-                                    alt="Activación Vasqui 2"
-                                    class="w-full aspect-video object-cover transition duration-500">
-                            </div>
-                            <!-- Slide 3 -->
-                            <div class="swiper-slide">
-                                <img src="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/foto%203.png"
-                                    alt="Activación Vasqui 3"
-                                    class="w-full aspect-video object-cover transition duration-500">
-                            </div>
-                        </div>
+                    <blockquote
+                        class="relative text-base md:text-lg text-slate-300 italic border-l-4 border-green-500 pl-6 py-2 bg-white/5 rounded-r-lg">
+                        "En un mundo lleno de folletos que terminan en la basura, el juego es el único medio que
+                        garantiza atención plena."
+                    </blockquote>
 
-                        <div class="swiper-pagination !bottom-4"></div>
+                    <p class="text-sm md:text-base text-slate-400 leading-relaxed">
+                        Las empresas líderes ya no solo "están" en la feria; ellas
+                        <span class="text-white font-bold underline decoration-green-500/50 underline-offset-4">dominan
+                            la feria</span>.
+                        Nuestros videojuegos para Totem están diseñados bajo principios de
+                        <span class="text-green-400">UX Psicológica</span> para maximizar el recuerdo de marca.
+                    </p>
 
-                        <!-- Flechas: ocultas en móvil para limpiar la UI (el usuario suele usar el dedo) -->
-                        <div
-                            class="swiper-button-next hidden md:flex !text-white !w-8 !h-8 after:!text-sm bg-black/20 backdrop-blur-md rounded-full">
-                        </div>
-                        <div
-                            class="swiper-button-prev hidden md:flex !text-white !w-8 !h-8 after:!text-sm bg-black/20 backdrop-blur-md rounded-full">
-                        </div>
+                    <div class="pt-4">
+                        <a href="#"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-500 text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] w-full md:w-auto">
+                            Quiero una activación
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
 
@@ -721,7 +821,8 @@
                         <tr class="border-b border-white/10">
                             <th class="p-6 font-bold text-slate-400 uppercase text-xs">Característica</th>
                             <th class="p-6 font-bold text-slate-400 uppercase text-xs">Agencias Genéricas</th>
-                            <th class="p-6 font-bold text-green-500 uppercase text-xs bg-green-500/5">VASQUI (Arequipa
+                            <th class="p-6 font-bold text-green-500 uppercase text-xs bg-green-500/5">El Foco de Vasqui
+                                (Arequipa
                                 Specialist)</th>
                         </tr>
                     </thead>
@@ -765,7 +866,7 @@
             <p class="text-xl text-dark/80 mb-12 font-medium">Hablemos hoy mismo y diseñemos la activación que todos
                 recordarán.</p>
             <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-                <a href="https://wa.me/YOURNUMBER"
+                <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
                     class="bg-dark text-white px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition shadow-2xl">
                     SÍ, QUIERO MI PROPUESTA
                 </a>
@@ -778,23 +879,18 @@
     <!-- Footer -->
     <footer class="py-12 bg-dark text-slate-500 border-t border-white/5">
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-            <img src="elfocodevasqui_logo.png" alt="Vasqui Logo" class="h-8 w-auto mb-4">
-            <p class="text-sm">© 2026 Vasqui Marketing Arequipa. Todos los derechos reservados. Expertos en Advergaming.
+            <img src="logos_foco_de_vasqui/logo en blanco 1.png" alt="El Foco de Vasqui Logo" class="h-8 w-auto mb-4">
+            <p class="text-sm">© 2026 El Foco de Vasqui Marketing Arequipa. Todos los derechos reservados. Expertos en
+                Advergaming.
             </p>
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-white transition">LinkedIn</a>
-                <a href="#" class="hover:text-white transition">Instagram</a>
-            </div>
+
         </div>
     </footer>
 
     <!-- Fixed WhatsApp Floating Button -->
-    <a href="https://wa.me/YOURNUMBER"
-        class="fixed bottom-8 right-8 z-[100] bg-green-500 p-4 rounded-full shadow-2xl hover:scale-110 transition group">
-        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path
-                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.407 3.481 2.242 2.242 3.481 5.226 3.481 8.408 0 6.556-5.332 11.89-11.891 11.89-1.923 0-3.836-.467-5.545-1.354l-6.442 1.575zm6.429-4.037l.388.231c1.551.921 3.345 1.408 5.174 1.408 5.432 0 9.854-4.422 9.854-9.854 0-2.636-1.026-5.112-2.888-6.973-1.862-1.863-4.337-2.889-6.966-2.889-5.431 0-9.853 4.421-9.853 9.853 0 2.046.633 4.041 1.832 5.736l.253.356-.998 3.64 3.728-.911zm11.13-7.534c-.307-.154-1.815-.895-2.097-.997-.281-.102-.485-.154-.689.154-.204.307-.791.997-.97 1.191-.179.194-.357.215-.664.061-.307-.154-1.3-.479-2.472-1.527-.912-.814-1.528-1.819-1.706-2.126-.178-.307-.019-.474.135-.626.139-.138.307-.357.46-.536.153-.179.204-.307.307-.512.102-.204.051-.383-.026-.537-.077-.154-.689-1.662-.945-2.277-.249-.599-.503-.518-.689-.528-.178-.009-.383-.011-.587-.011-.204 0-.537.077-.817.384-.281.307-1.073 1.05-1.073 2.56 0 1.51 1.1 2.97 1.253 3.174.153.204 2.164 3.305 5.241 4.636.732.316 1.303.504 1.748.646.735.234 1.404.2 1.933.121.589-.088 1.815-.742 2.071-1.458.256-.717.256-1.33.179-1.458-.077-.128-.282-.204-.589-.358z" />
-        </svg>
+    <a href="https://tokiorivs.website/contact/wa/elfocodevasqui"
+        class="fixed bottom-8 right-8 z-[100] shadow-2xl hover:scale-110 transition group rounded-full">
+        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" width="128" height="129" viewBox="0 0 256 258"><defs><linearGradient id="SVGK3KZq49U" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="SVGefMkoEOd" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#SVGK3KZq49U)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#SVGefMkoEOd)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/></svg>
         <span
             class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-dark text-xs font-bold px-3 py-1 rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition whitespace-nowrap">¡Hablemos
             de tu evento!</span>

@@ -3,11 +3,19 @@
 <html class="dark" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>VASQUI - Activaciones de Marketing</title>
+<title>El Foco de Vasqui - Activaciones de Marketing</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<!-- SEO & Indexing -->
+<link rel="canonical" href="https://vasqui.pe/activacion.html" />
+<link rel="icon" type="image/png" href="iconfav.png">
+<meta property="og:title" content="Casos de Éxito | El Foco de Vasqui" />
+<meta property="og:description" content="Nuestras activaciones más impactantes. Resultados reales para marcas líderes." />
+<meta property="og:image" content="https://pub-df6ac2b60b9047d88d95e2589d854e41.r2.dev/elfocodevasqui/blur-shopping-mall.jpg" />
+<meta property="og:type" content="website" />
+
 <script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
@@ -100,10 +108,10 @@
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary/30">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-2xl">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl z-50 bg-[#131313]/90 backdrop-blur-2xl">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-2">
                 <a href="index.html" class="flex items-center">
-                    <img src="elfocodevasqui_logo.png" alt="Vasqui Logo" class="h-10 w-auto">
+                    <img src="logos_foco_de_vasqui/logo en blanco 1.png" alt="El Foco de Vasqui Logo" class="h-16 w-auto">
                 </a>
 <div class="hidden md:flex gap-8 font-headline tracking-tight">
 <a class="text-zinc-400 hover:text-white transition-colors" href="index.html">Inicio</a>
@@ -388,37 +396,44 @@
 <h2 class="text-5xl font-display font-bold text-white">Contacto</h2>
 <p class="text-zinc-500 mt-4">Hablemos sobre tu próximo gran movimiento.</p>
 </div>
-<form class="space-y-6">
+<form class="space-y-6" action="https://formsubmit.co/tokiorivs@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nueva Solicitud: Casos de Éxito">
+<input type="hidden" name="_honey" style="display:none">
+<input type="hidden" name="_template" value="table">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-[10px] uppercase tracking-widest font-bold text-zinc-500">Nombre</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="Tu nombre completo" type="text"/>
+<input name="nombre" class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="Tu nombre completo" type="text" required/>
 </div>
 <div class="space-y-2">
 <label class="text-[10px] uppercase tracking-widest font-bold text-zinc-500">Empresa</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="Nombre de tu marca" type="text"/>
+<input name="empresa" class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="Nombre de tu marca" type="text" required/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-widest font-bold text-zinc-500">Email de contacto</label>
+<input name="email" class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="tu@correo.com" type="email" required/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="space-y-2">
 <label class="text-[10px] uppercase tracking-widest font-bold text-zinc-500">Tipo de Evento</label>
-<select class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-zinc-400 py-4 px-6 rounded">
-<option>Lanzamiento</option>
-<option>Retail BTL</option>
-<option>Feria</option>
-<option>Otros</option>
+<select name="tipo_evento" class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-zinc-400 py-4 px-6 rounded">
+<option value="Lanzamiento">Lanzamiento</option>
+<option value="Retail BTL">Retail BTL</option>
+<option value="Feria">Feria</option>
+<option value="Otros">Otros</option>
 </select>
 </div>
 <div class="space-y-2">
 <label class="text-[10px] uppercase tracking-widest font-bold text-zinc-500">Presupuesto</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="Estimado en USD" type="text"/>
+<input name="presupuesto" class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-white py-4 px-6 rounded" placeholder="Estimado en USD" type="text"/>
 </div>
 <div class="space-y-2">
 <label class="text-[10px] uppercase tracking-widest font-bold text-zinc-500">Fecha</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-zinc-400 py-4 px-6 rounded" type="date"/>
+<input name="fecha" class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-primary text-zinc-400 py-4 px-6 rounded" type="date"/>
 </div>
 </div>
-<button class="w-full py-6 bg-primary text-on-primary font-black uppercase tracking-[0.3em] text-sm hover:opacity-90 transition-opacity">
+<button type="submit" class="w-full py-6 bg-primary text-on-primary font-black uppercase tracking-[0.3em] text-sm hover:opacity-90 transition-opacity">
                         Enviar Solicitud
                     </button>
 </form>
@@ -428,7 +443,7 @@
 <!-- Footer -->
 <footer class="w-full border-t border-white/5 bg-[#0E0E0E]">
 <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-12 gap-6">
-<div class="text-xl font-bold text-white font-display">VASQUI</div>
+<div class="text-xl font-bold text-white font-display">EL FOCO DE VASQUI</div>
 <div class="flex flex-wrap justify-center gap-8 text-sm uppercase tracking-widest font-body text-zinc-500">
 <a class="hover:text-primary transition-colors" href="#">Services</a>
 <a class="hover:text-primary transition-colors" href="#">Methodology</a>
@@ -437,7 +452,7 @@
 <a class="hover:text-primary transition-colors" href="#">Terms</a>
 </div>
 <div class="text-[10px] uppercase tracking-widest text-zinc-600">
-                © 2024 Vasqui - Kinetic Noir Strategic Activations.
+                © 2024 El Foco de Vasqui - Kinetic Noir Strategic Activations.
             </div>
 </div>
 </footer>

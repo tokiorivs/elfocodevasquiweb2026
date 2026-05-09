@@ -25,29 +25,45 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(item);
     });
 
-    // Handle form submission
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerText;
-            
-            btn.innerText = 'Enviando...';
-            btn.disabled = true;
+    // 6. Contact Form Submission (Real Email Sending)
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
 
-            // Simulate API call
-            setTimeout(() => {
-                btn.innerText = '¡Propuesta Solicitada!';
-                btn.style.backgroundColor = '#2FA096'; // Success color from design system
-                contactForm.reset();
-                
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.disabled = false;
-                    btn.style.backgroundColor = '';
-                }, 3000);
-            }, 1500);
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Basic UI Feedback
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'Enviando...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(contactForm);
+
+            const endpoint = `https://formsubmit.co/ajax/elfocodevasqui@gmail.com`;
+
+            try {
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    alert('¡Gracias! Tu solicitud ha sido enviada. Nos pondremos en contacto contigo pronto.');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Error al enviar el formulario');
+                }
+            } catch (error) {
+                console.error('Submission Error:', error);
+                alert('Hubo un problema al enviar tu solicitud. Por favor, inténtalo de nuevo o contáctanos por WhatsApp.');
+            } finally {
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            }
         });
     }
 });
